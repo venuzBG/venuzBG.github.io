@@ -1,0 +1,130 @@
+/* --- REINICIO BÁSICO DE ESTILOS ---
+   Esto elimina márgenes y rellenos por defecto del navegador.
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --- ESTILOS GENERALES DEL CUERPO ---
+   Se aplica un fondo, color del texto y tipografía global.
+*/
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url("C:/Universidad_Seb/S-5/MN/Actividades_Extracuriculares/PaginaWeb/Imagenes/89787.jpg"); /* Imagen de fondo */
+    background-size: cover; /* Que cubra toda la pantalla */
+    background-repeat: no-repeat; /* No se repite la imagen */
+    background-attachment: fixed; /* Fondo fijo al hacer scroll */
+    background-position: center; /* Centrado de la imagen */
+    color: #fff; /* Color del texto */
+    height: 100vh; /* Ocupa el alto total de la ventana */
+}
+
+/* --- CABECERA Y MENÚ SUPERIOR --- */
+header {
+    display: flex; /* Permite alinear elementos horizontalmente */
+    justify-content: right; /* Alineamos el contenido a la izquierda */
+    align-items: center; /* Centramos verticalmente dentro del header */
+    padding: 1rem 3rem; /* Espaciado interno (1rem arriba/abajo, 3rem lados) */
+    background: rgba(0, 0, 0, 0.6); /* Fondo semitransparente para contraste */
+    position: fixed; /* El menú se queda fijo al hacer scroll */
+    top: 0; /* Pegado a la parte superior */
+    width: 100%; /* Ocupa todo el ancho */
+}
+
+
+/* --- LISTA DE NAVEGACIÓN --- */
+nav ul {
+    list-style: none; /* Quita los puntos de la lista */
+    display: flex; /* Muestra los enlaces en línea */
+    gap: 50px; /* Espacio entre botones */
+}
+
+/* --- ENLACES DEL MENÚ --- */
+nav ul li a {
+    color: #fff;
+    text-decoration: none; /* Quita el subrayado */
+    font-weight: bold;
+    transition: color 0.3s; /* Suaviza el cambio de color al pasar el mouse */
+}
+
+/* --- EFECTO HOVER EN MENÚ --- */
+nav ul li a:hover {
+    color: #90e0ef;
+}
+
+/* --- SECCIÓN DE PRESENTACIÓN ---
+   Aquí ajustamos la posición más hacia la izquierda.
+*/
+main {
+    display: flex;
+    justify-content: right; /* Alinea el contenido hacia la izquierda */
+    align-items: center;
+    flex-direction: column;
+    text-align: center; /* Texto alineado a la izquierda */
+    height: 100vh;
+    padding-top: 150px; /* Deja espacio para que no se superponga al header */
+    padding-left: 120px; /* Mueve todo el contenido un poco hacia la izquierda */
+}
+
+/* --- FOTO PERSONAL --- */
+.foto {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%; /* Forma circular */
+    margin-bottom: 1rem;
+    border: 3px solid #90e0ef; /* Borde azul claro */
+    object-fit: cover; /* Ajusta la imagen sin deformarla */
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Sombra sutil */
+}
+
+.presentacion {
+    width: 500px;
+    background: rgba(0,0,0,0.5);
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.7);
+
+}
+
+/* --- TEXTO DE PRESENTACIÓN --- */
+.presentacion h2 {
+    font-size: 1.8rem;
+    color: #fff;
+    margin-bottom: 0.3rem;
+}
+
+.universidad {
+    font-size: 1.1rem;
+    color: #b5d9e0;
+    margin-bottom: 1.5rem;
+}
+
+/* Frase preferida */
+.frase {
+    font-style: italic;
+    color: #ccc;
+    line-height: 1.6;
+    border-left: 3px solid #90e0ef;
+    padding-left: 1rem;
+}
+
+.frase span {
+    display: block;
+    margin-top: 0.3rem;
+    font-size: 0.9rem;
+    color: #90e0ef;
+}
+
+/* --- PIE DE PÁGINA --- */
+footer {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
